@@ -1,0 +1,542 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 0.9375rem;
+  margin: 0 auto;
+  max-width: 96rem;
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    padding: 4.26rem 0 8.73rem;
+  }
+}
+main {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.4))
+    ),
+    url(images/mobile/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 40.3rem;
+  padding-top: 2.67rem;
+}
+@media screen and (min-width: 992px) {
+  main {
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.4))
+      ),
+      url(images/desktop/image-hero.jpg);
+  }
+}
+.nav a,
+.nav-links a {
+  padding-bottom: 5px;
+}
+@media only screen and (min-width: 800px) {
+  .nav {
+    padding-left: 1.3125rem;
+    padding-right: 1.3125rem;
+  }
+}
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 800px) {
+  .nav {
+    padding-left: 2.3125rem;
+    padding-right: 2.3125rem;
+    padding-top: 2.25rem;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .nav {
+    padding-left: 10.25rem;
+    padding-right: 10rem;
+    padding-top: 2.975rem;
+  }
+}
+.mobile-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.nav h1 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Alata", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.nav {
+  z-index: 2;
+}
+.hamburger {
+  position: relative;
+  display: none;
+  width: 35px;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+.hamburger .bar,
+.hamburger::after,
+.hamburger:before {
+  content: " ";
+  display: block;
+  background-color: white;
+  width: 1.93rem;
+  height: 0.15rem;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.hamburger.is-active::before {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.is-active::after {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+@media only screen and (max-width: 798px) {
+  .hamburger {
+    display: block;
+  }
+}
+@media only screen and (min-width: 798px) {
+  nav .menu {
+    display: none;
+  }
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.9;
+  font-weight: 300;
+  font-family: "Josefin Sans";
+  display: inline-block;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+.heading {
+  position: relative;
+  color: white;
+  top: 8rem;
+  left: 1rem;
+  height: 15.75rem;
+  width: 26rem;
+  height: auto;
+  padding: 1rem;
+  border: 1px solid white;
+  font-family: "Josefin Sans";
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 800px) {
+  .heading {
+    position: relative;
+    color: white;
+    top: 7.85rem;
+    left: 10.25rem;
+    height: 17.065rem;
+    width: 40.625rem;
+    padding: 2.25rem;
+    border: 2px solid white;
+    font-family: "Josefin Sans";
+    font-size: 4.8rem;
+    font-weight: 300;
+    line-height: 97%;
+  }
+}
+.vr-image {
+  margin: auto;
+  max-width: fit-content;
+}
+.vrimg {
+  display: block;
+}
+
+.vr-text {
+  text-align: center;
+  padding-top: 5.9rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: white;
+}
+.vr-h1 {
+  color: black;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 97%;
+  padding-bottom: 2.5rem;
+  font-family: "Josefin Sans";
+}
+
+.vr-p {
+  color: hsl(0, 0%, 55%);
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+.section-1 {
+  margin-top: 162px;
+  margin-bottom: 100px;
+}
+@media only screen and (min-width: 1100px) {
+  .section-1 {
+    margin: 162px;
+  }
+  .vr-image {
+    position: absolute;
+    height: auto;
+  }
+  .vrimg {
+    display: block;
+  }
+  .vr-text {
+    position: relative;
+    width: 40rem;
+    height: auto;
+    top: 10.25rem;
+    left: 38.875rem;
+    padding-top: 5.9rem;
+    padding-left: 5.9rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+    background-color: white;
+  }
+  .vr-h1 {
+    color: black;
+    font-family: "Josefin Sans";
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 97%;
+    padding-bottom: 2.5rem;
+  }
+
+  .vr-p {
+    color: hsl(0, 0%, 55%);
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+.creations {
+  text-align: center;
+  text-transform: uppercase;
+  margin-inline: 60px;
+}
+
+.container {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  margin-inline: 41px;
+}
+
+.flex h2 {
+  text-transform: uppercase;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 3.2rem;
+}
+
+.flex .btn {
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: 12px;
+  padding: 18px 38px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 0.8rem;
+  border: 1px solid black;
+}
+@media screen and (max-width: 800px) {
+  #hidden {
+    display: none;
+  }
+}
+.flex .btn:hover {
+  background-color: black;
+  color: white;
+  transition: 1s ease-in-out;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+figure {
+  position: relative;
+  margin-bottom: 1.6rem;
+  z-index: 3;
+  color: black;
+  transition: all 0.3s ease;
+}
+figcaption {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: absolute;
+  bottom: 2.25rem;
+  left: 2.5rem;
+  width: 10rem;
+  text-transform: uppercase;
+  text-align: left;
+  z-index: 5;
+  transition: color 0.3s;
+  transition: opacity 1s;
+  pointer-events: none;
+}
+@media screen and (min-width: 1200px) {
+  .creations figcaption {
+    width: 11.3rem;
+    left: 2.66rem;
+    bottom: 2.13rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .creations figcaption {
+    font-size: 2rem;
+  }
+}
+.figure-container:hover {
+  opacity: 0.2;
+  transition: opacity 0.3s ease-in-out;
+}
+
+figure:hover .caption {
+  opacity: 1;
+  color: black;
+}
+@media only screen and (max-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
+.grid {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 180px;
+}
+
+@media screen and (min-width: 768px) {
+  .grid img {
+    max-height: 30rem;
+  }
+}
+.grid img {
+  margin: 0 auto;
+  width: 100%;
+}
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid figure {
+  position: relative;
+  z-index: 3;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.loopstudio {
+  background-color: black;
+  height: 160px;
+  padding-inline: 159px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding-block: 37px;
+  margin: auto;
+  font-family: "Josefin Sans";
+}
+.loopstudio-heading h2 {
+  padding-bottom: 28px;
+  padding-left: 12px;
+}
+
+.links {
+  padding-bottom: 28px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.loopstudio-links a {
+  text-decoration: none;
+  color: white;
+  padding-left: 12px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.attribution {
+  text-align: center;
+  color: black;
+  margin: 0px;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+}
+@media only screen and (max-width: 985px) {
+  .loopstudio {
+    height: 596px;
+    padding-inline: 71px;
+    padding-block: 64px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .loopstudio-links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 46px;
+    align-items: center;
+  }
+  .loopstudio-links a {
+    padding-bottom: 33px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .loopstudio-heading {
+    padding-bottom: 30px;
+  }
+  .links {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 1;
+  background-color: black;
+  padding-top: 200px;
+  transition: 0.4s;
+}
+.menu.is-active {
+  left: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  color: white;
+  width: fit-content;
+  display: block;
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto 16px;
+}
+
+.button .btn2 {
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: 12px;
+  padding: 18px 38px;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 0.8rem;
+  border: 1px solid black;
+  position: relative;
+  left: 180px;
+  bottom: 100px;
+}
+.button {
+  max-width: auto;
+}
+.button .btn2:hover {
+  background-color: black;
+  color: white;
+  transition: 1s ease-in-out;
+}
+@media screen and (min-width: 800px) {
+  #hide {
+    display: none;
+  }
+}
+.nav a::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  bottom: -2px;
+  left: 0px;
+  background-color: white;
+  transition: width 0.2s ease-in-out;
+  position: absolute;
+}
+.loopstudio-links a::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  bottom: -2px;
+  left: 10px;
+  background-color: white;
+  transition: width 0.2s ease-in-out;
+  position: absolute;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.loopstudio-links a:hover::after {
+  width: 88%;
+}
